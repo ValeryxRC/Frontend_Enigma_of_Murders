@@ -1,27 +1,50 @@
+.container {  
+    max-width: 100%;
+    min-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-#pantalla{
-    width: 1000px;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f8f3ea;
+.row {  
+    display: -ms-flexbox;  
+    display: flex;  
+    -ms-flex-wrap: wrap;  
+    flex-wrap: wrap;  
+    margin-right: -15px;  
+    margin-left: -15px;  
 }
+  
+.align-items-center{
+    -ms-flex-align: center !important;  
+    align-items: flex-center !important;  
+}
+
+.col {  
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;  
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}  
 
 
 #logo{
+    width: 300px;
+    height: 50px;
+    left: 50%;
     position: absolute;
-    
     transform: translate(-50%, -50%); 
     border-radius: 0%;
     border: none;
 }
 
 #info{
+    
     position: absolute;
     left: 50%;
-    top: 65%;
+    margin-top: 25%;
     padding: 5%;
     transform: translate(-50%, -50%);
     text-align: justify;
@@ -29,29 +52,56 @@
 
 }
 
-.card{
+#ceos{
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: auto auto;
-    gap: 20px;
     transform: translate(-50%, -50%);
     background-color: #f8f3ea00;
-    border-radius: 0%;
     border: none;
+    left: 50%;
+    margin-top: 10%;
+}
 
+.integrantes{
+    width: 80px;
+    background-color:#f8f3ea00;
+    border: none;
+    display: -webkit-box;
+}
+
+.text{
+    width: 100px;
 }
 
 span{
     color: #9eccfa;
 }
 
+#socialmedia{
+    position: absolute;
+    left: 50%;
+    padding: 5%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+ 
+a{
+    text-decoration: none;
+    color: #0b1853;
+}
+
 #copyright{
     position: absolute;
     left: 50%;
-    top: 82%;
+    margin-top: 5%;
     padding: 5%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-size: xx-small;
 }
 
+/*RESPONSIVE*/
+@media screen and (max-width: 390px){
+
+}
